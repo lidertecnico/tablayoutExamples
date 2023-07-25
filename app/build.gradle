@@ -1,0 +1,58 @@
+// Plugins aplicados al proyecto
+plugins {
+    id 'com.android.application' // Plugin para aplicaciones Android
+}
+
+// Configuración del proyecto Android
+android {
+    namespace 'unal.todosalau.tablayoutexample' // Espacio de nombres de la aplicación
+
+    compileSdk 33 // Versión del SDK de compilación utilizada
+
+    // Configuración predeterminada para la aplicación
+    defaultConfig {
+        applicationId "unal.todosalau.tablayoutexample" // ID del paquete de la aplicación
+        minSdk 33 // Versión mínima del SDK requerida
+        targetSdk 33 // Versión del SDK de destino
+        versionCode 1 // Código de versión de la aplicación
+        versionName "1.0" // Nombre de la versión de la aplicación
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner" // Configuración del runner de pruebas
+    }
+
+    // Definición de tipos de compilación (debug, release, etc.)
+    buildTypes {
+        release {
+            minifyEnabled false // Habilitar o deshabilitar minificación
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro' // Archivos Proguard utilizados para la optimización y ofuscación del código
+        }
+    }
+
+    // Opciones de compilación
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8 // Compatibilidad con Java 1.8
+        targetCompatibility JavaVersion.VERSION_1_8 // Destino de la compilación a Java 1.8
+    }
+}
+
+// Dependencias utilizadas en el proyecto
+dependencies {
+
+    // Dependencia de la librería androidx.appcompat
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+
+    // Dependencia de la librería com.google.android.material
+    implementation 'com.google.android.material:material:1.9.0'
+
+    // Dependencia de la librería androidx.constraintlayout
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Dependencia de la librería JUnit para pruebas unitarias
+    testImplementation 'junit:junit:4.13.2'
+
+    // Dependencia de la librería androidx.test.ext para pruebas de Android
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+
+    // Dependencia de la librería androidx.test.espresso para pruebas de interfaz de usuario
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

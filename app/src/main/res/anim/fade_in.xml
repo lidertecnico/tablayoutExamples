@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Este archivo XML define una animación de     transparencia que
+    va desde 0.0 (totalmente transparente) a 1.0 (totalmente visible)
+    en 1500 milisegundos. -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- La etiqueta <alpha> representa una animación de cambio de
+        transparencia (alpha) para una vista en Android. -->
+    <!-- android:duration="1500" Duración de la animación en milisegundos. -->
+    <!-- android:fromAlpha="0.0" Nivel de transparencia inicial (totalmente transparente). -->
+    <!--  android:toAlpha="1.0" Nivel de transparencia final (totalmente visible). -->
+    <alpha
+        android:duration="1500"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+</set>

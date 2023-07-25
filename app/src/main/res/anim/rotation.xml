@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Este archivo XML define una animación de rotación que rota una vista completa en
+    360 grados en 2000 milisegundos alrededor de su centro. -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- La etiqueta <rotate> representa una animación de rotación para una vista en Android. -->
+    <!-- android:duration="2000"  Duración de la animación en milisegundos. -->
+    <!-- android:fromDegrees="0" Ángulo de rotación inicial (sin rotación). -->
+    <!-- android:toDegrees="360" Ángulo de rotación final (una rotación completa de 360 grados). -->
+    <!-- android:pivotX="50%" Punto X alrededor del cual se realizará la rotación (50% indica el
+            centro horizontal de la vista). -->
+    <!-- android:pivotY="50%" Punto Y alrededor del cual se realizará la rotación (50% indica el
+        centro vertical de la vista). -->
+    <rotate
+        android:duration="2000"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%" />
+</set>

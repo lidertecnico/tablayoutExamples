@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Este archivo XML define una animación de desplazamiento (translate) que mueve
+        una vista desde la parte inferior fuera de la pantalla hasta su posición
+        original en 1500 milisegundos. -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- La etiqueta <translate> representa una animación de desplazamiento
+        para una vista en Android. -->
+    <!-- android:duration="1500"  Duración de la animación en milisegundos. -->
+    <!-- android:fromYDelta="100%"  Posición inicial en el eje Y, desplazada 100% hacia abajo
+    (fuera de la pantalla). -->
+    <!--android:toYDelta="0"   Posición final en el eje Y, sin desplazamiento (posición original). -->
+    <translate
+        android:duration="1500"
+    android:fromYDelta="100%"
+    android:toYDelta="0" />
+</set>

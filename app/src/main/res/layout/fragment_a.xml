@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Este es el diseño del Fragmento A -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentA">
+    <!-- Un LinearLayout que contiene el contenido del Fragmento A -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="26dp">
+        <!-- Un MaterialCardView que actúa como contenedor para el contenido principal -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="20dp">
+            <!-- Un ImageView que muestra una imagen en el Fragmento A -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/img_fragment_a"/>
+            <!-- Un MaterialTextView que muestra el título del Fragmento A -->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="@string/titleFragA"/>
+
+            <!-- Un MaterialButton que se utilizará para animar el Fragmento A -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_animar_frag_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:textSize="26dp"
+                android:text="@string/title_btn_Frag"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</FrameLayout>

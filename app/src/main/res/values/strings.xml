@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TabLayout Example</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Definición de recursos de cadena -->
+    <!-- Texto del textview de titulo del fragment A -->
+    <string name="titleFragA"> Hola desde el fragment A </string>
+    <!-- Texto del textview de titulo del fragment B -->
+    <string name="titleFragB"> Hola desde el fragment B </string>
+    <!-- Texto del textview de titulo del fragment C -->
+    <string name="titleFragC"> Hola desde el fragment C </string>
+    <!-- Texto del textview de titulo del fragment C -->
+    <string name="title_btn_Frag"> Animar </string>
+</resources>
